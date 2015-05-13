@@ -659,3 +659,7 @@ background: linear-gradient(to bottom,  rgba(73,202,209,0.3) 0%,rgba(133,225,222
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d49cad1', endColorstr='#0085e1de',GradientType=0 ); /* IE6-9 */
 
 }
+
+#twitter-widget-0{
+    margin-top: 24px;
+}

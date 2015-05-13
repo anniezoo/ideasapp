@@ -17,9 +17,39 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <section id="gradient-bg">
         <div class="container">
-            <h2 class="hero" style="font-weight:300;font-size:150%;"><img src="img/ideas.png" style="height:35px;display:inline; padding-right:10px; margin-top:-3px;" class="img-responsive">Ideas</h2>
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <h2 class="hero" style="font-weight:300;font-size:150%;"><img src="img/ideas.png" style="height:35px;display:inline; padding-right:10px; margin-top:-3px;" class="img-responsive">Ideas</h2>
+                </div>
+                <div class="navbar-right">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.ideasapp.me/" data-text="Checkout this app" data-related="YeZhou3" data-hashtags="ideasApp">Tweet</a>
+                    <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + '://platform.twitter.com/widgets.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
+            </nav>
         </div>
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-sm-12">
