@@ -649,6 +649,17 @@ only screen and (max-width: 767px) {
     font-size: 16px;
 }
 
+@media screen and (min-width: 64em) {
+  #mce-EMAIL {
+    min-width:350px;} }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  #mce-EMAIL {
+    min-width:280px; } }
+
+@media screen and (max-width: 42em) {
+  #mce-EMAIL { } }
+
 #gradient-bg {
 background: -moz-linear-gradient(top,  rgba(73,202,209,0.3) 0%, rgba(133,225,222,0) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,202,209,0.3)), color-stop(100%,rgba(133,225,222,0))); /* Chrome,Safari4+ */
