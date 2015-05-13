@@ -649,13 +649,51 @@ only screen and (max-width: 767px) {
     font-size: 16px;
 }
 
-#gradient-bg {
-background: -moz-linear-gradient(top,  rgba(73,202,209,0.3) 0%, rgba(133,225,222,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,202,209,0.3)), color-stop(100%,rgba(133,225,222,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(73,202,209,0.3) 0%,rgba(133,225,222,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(73,202,209,0.3) 0%,rgba(133,225,222,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(73,202,209,0.3) 0%,rgba(133,225,222,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(73,202,209,0.3) 0%,rgba(133,225,222,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d49cad1', endColorstr='#0085e1de',GradientType=0 ); /* IE6-9 */
-
+@media screen and (min-width: 64em) {
+    #mce-EMAIL {
+        min-width: 400px;
+    }
 }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    #mce-EMAIL {
+       min-width: 315px;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    #mce-EMAIL {}
+}
+
+#gradient-bg {
+    background: -moz-linear-gradient(top, rgba(73, 202, 209, 0.3) 0%, rgba(133, 225, 222, 0) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(73, 202, 209, 0.3)), color-stop(100%, rgba(133, 225, 222, 0)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(73, 202, 209, 0.3) 0%, rgba(133, 225, 222, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(73, 202, 209, 0.3) 0%, rgba(133, 225, 222, 0) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(73, 202, 209, 0.3) 0%, rgba(133, 225, 222, 0) 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to bottom, rgba(73, 202, 209, 0.3) 0%, rgba(133, 225, 222, 0) 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4d49cad1', endColorstr='#0085e1de', GradientType=0);
+    /* IE6-9 */
+}
+
+.nav-item a{
+    text-transform: uppercase;
+    padding:13px 40px;
+    margin-top:27px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+}
+
